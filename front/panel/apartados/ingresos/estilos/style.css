@@ -8,17 +8,57 @@ body {
   background-color: #f4f6f8;
 }
 
-.app-apartado {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
+/* LAYOUT */
+.app {
+  display: flex;
+  min-height: 100vh;
 }
 
-h2 {
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  background: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  padding: 25px 20px;
+}
+
+.logo {
+  color: #6c63ff;
+  margin-bottom: 40px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  color: #444;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background-color: #f0efff;
+  color: #6c63ff;
+}
+
+/* CONTENIDO */
+.content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+/* TITULOS */
+.content h2 {
   color: #333;
   margin-bottom: 25px;
 }
 
+/* LISTA DE MOVIMIENTOS */
 .lista-movimientos {
   display: flex;
   flex-direction: column;
