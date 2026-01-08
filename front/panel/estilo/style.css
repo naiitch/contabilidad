@@ -1,11 +1,10 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
+  margin: 0;
   background-color: #f4f6f8;
 }
 
@@ -17,30 +16,31 @@ body {
 
 /* SIDEBAR */
 .sidebar {
-  width: 220px;
-  background-color: #ffffff;
+  width: 230px;
+  background: #ffffff;
   border-right: 1px solid #e0e0e0;
-  padding: 20px;
+  padding: 25px 20px;
 }
 
 .logo {
+  color: #6c63ff;
   margin-bottom: 40px;
-  color: #2c3e50;
 }
 
 .sidebar nav a {
   display: block;
-  padding: 12px 10px;
+  padding: 12px;
   margin-bottom: 8px;
-  color: #555;
+  border-radius: 8px;
+  color: #444;
   text-decoration: none;
-  border-radius: 6px;
+  transition: background 0.2s;
 }
 
 .sidebar nav a:hover,
 .sidebar nav a.active {
-  background-color: #eaf2ff;
-  color: #2f5bea;
+  background-color: #f0efff;
+  color: #6c63ff;
 }
 
 /* CONTENIDO */
@@ -55,14 +55,14 @@ body {
   margin-bottom: 30px;
 }
 
-.saldo .label {
-  color: #777;
+.label {
   font-size: 14px;
+  color: #666;
 }
 
-.saldo .amount {
-  font-size: 36px;
-  color: #2c3e50;
+.amount {
+  font-size: 38px;
+  color: #333;
 }
 
 /* RESUMEN */
@@ -74,10 +74,10 @@ body {
 
 .card {
   flex: 1;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
 
 .card p {
@@ -85,33 +85,34 @@ body {
   margin-bottom: 10px;
 }
 
-.ingresos h3 {
+.ingresos {
   color: #27ae60;
 }
 
-.gastos h3 {
+.gastos {
   color: #c0392b;
 }
 
 /* HISTORIAL */
 .historial h2 {
   margin-bottom: 20px;
-  color: #2c3e50;
+  color: #333;
 }
 
 .movimiento {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
+  background: #ffffff;
   padding: 15px;
-  background-color: #ffffff;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 10px;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.04);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.04);
+  font-size: 14px;
 }
 
 .movimiento span:nth-child(2) {
   text-align: right;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .movimiento span:nth-child(3) {
@@ -126,3 +127,4 @@ body {
 .movimiento.gasto span:nth-child(2) {
   color: #c0392b;
 }
+
